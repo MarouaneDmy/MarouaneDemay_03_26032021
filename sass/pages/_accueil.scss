@@ -1,0 +1,59 @@
+/* Localisation du client */
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 50px;
+    background-color: darken($color-grey, 5%);
+    .localisation_ville {
+        display: flex;
+        margin-right: 35px;
+        p {
+            font-size: 17.5px;
+            margin: 0;
+            margin-left: 20px;        
+        }
+        i {
+            font-size: 17.5px;
+        }
+    }
+}
+
+.presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $color-grey;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    h1 {
+        width: 80%;
+        font-size: 25px;
+        text-align: center;
+        margin: 0;
+    }
+    h2 {
+        width: 90%;
+        font-size: 17.5px;
+        color: darken($color-grey, 40%);
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .btn_explorer {
+        width: 220px;
+        height: 50px;
+        border: none;
+        border-radius: 30px 30px 30px 30px;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);  
+        a {
+            text-decoration: none;
+            p {
+                color: $color-white;
+                font-size: 16px;
+                margin: 0;
+                text-decoration: none;
+            }  
+        }
+    }
+}
