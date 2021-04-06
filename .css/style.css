@@ -61,6 +61,17 @@ header p img {
   height: auto;
 }
 
+footer {
+  background-color: #262626;
+}
+footer p {
+  margin: 0;
+}
+footer p img {
+  width: 180px;
+  height: auto;
+}
+
 /* Localisation du client */
 .localisation {
   display: flex;
@@ -320,17 +331,6 @@ header p img {
 }
 .restaurants .choix_restaurant figure figcaption .like i {
   font-size: 25px;
-}
-
-footer {
-  background-color: #262626;
-}
-footer p {
-  margin: 0;
-}
-footer p img {
-  width: 180px;
-  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+footer {
+    background-color: darken($color-grey, 80%);
+    p {
+        margin: 0;
+        img {
+            width: 180px;
+            height: auto;
+        }
+    }
+}
