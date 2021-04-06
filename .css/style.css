@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* ETAPES de FONCTIONNEMENT */
 /* Body */
 body {
   margin: 0;
@@ -30,15 +32,15 @@ body {
   font-style: normal;
 }
 h1 {
-  font-family: "robotomedium";
+  font-family: "robotomedium", sans-serif;
 }
 
 h2 {
-  font-family: "robotolight";
+  font-family: "robotolight", sans-serif;
 }
 
 p {
-  font-family: "robotomedium";
+  font-family: "robotomedium", sans-serif;
 }
 
 /* Header */
@@ -80,6 +82,7 @@ header p img {
   font-size: 17.5px;
 }
 
+/* Présentation du site */
 .presentation {
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +110,7 @@ header p img {
   height: 50px;
   border: none;
   border-radius: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 5px #cccccc;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .presentation .btn_explorer a {
@@ -117,6 +121,216 @@ header p img {
   font-size: 16px;
   margin: 0;
   text-decoration: none;
+}
+
+/* Etapes de fonctionnement du site */
+.fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.fonctionnement h1 {
+  margin-top: 35px;
+  margin-left: 15px;
+}
+.fonctionnement .etapes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.fonctionnement .etapes .choisir {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  width: 90%;
+  height: 70px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  margin-bottom: 20px;
+}
+.fonctionnement .etapes .choisir .numero {
+  display: flex;
+  position: relative;
+  left: -13px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #9356DC;
+  border-radius: 25px 25px 25px 25px;
+}
+.fonctionnement .etapes .choisir .numero span {
+  font-family: "robotomedium", sans-serif;
+  color: #fff;
+}
+.fonctionnement .etapes .choisir p {
+  height: 20px;
+  width: 200px;
+  margin-left: 30px;
+}
+.fonctionnement .etapes .choisir .icon {
+  text-align: center;
+  width: 22px;
+  margin-left: 5px;
+}
+.fonctionnement .etapes .choisir .icon i {
+  color: grey;
+  font-size: 20px;
+}
+.fonctionnement .etapes .composer {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  width: 90%;
+  height: 70px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  margin-bottom: 20px;
+}
+.fonctionnement .etapes .composer .numero {
+  display: flex;
+  position: relative;
+  left: -13px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #9356DC;
+  border-radius: 25px 25px 25px 25px;
+}
+.fonctionnement .etapes .composer .numero span {
+  font-family: "robotomedium", sans-serif;
+  color: #fff;
+}
+.fonctionnement .etapes .composer p {
+  height: 20px;
+  width: 200px;
+  margin-left: 30px;
+}
+.fonctionnement .etapes .composer .icon {
+  text-align: center;
+  width: 22px;
+  margin-left: 5px;
+}
+.fonctionnement .etapes .composer .icon i {
+  color: grey;
+  font-size: 20px;
+}
+.fonctionnement .etapes .deguster {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  width: 90%;
+  height: 70px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 5px 5px #e5e5e5;
+  margin-bottom: 20px;
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .deguster .numero {
+  display: flex;
+  position: relative;
+  left: -13px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #9356DC;
+  border-radius: 25px 25px 25px 25px;
+}
+.fonctionnement .etapes .deguster .numero span {
+  font-family: "robotomedium", sans-serif;
+  color: #fff;
+}
+.fonctionnement .etapes .deguster p {
+  height: 20px;
+  width: 200px;
+  margin-left: 30px;
+}
+.fonctionnement .etapes .deguster .icon {
+  text-align: center;
+  width: 22px;
+  margin-left: 5px;
+}
+.fonctionnement .etapes .deguster .icon i {
+  color: grey;
+  font-size: 20px;
+}
+.fonctionnement .etapes .deguster .icon i {
+  color: #9356DC;
+}
+
+/* Les différents restaurants */
+.restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+.restaurants h1 {
+  margin-left: 15px;
+}
+.restaurants .choix_restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.restaurants .choix_restaurant figure {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 90%;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 5px 5px #e5e5e5;
+}
+.restaurants .choix_restaurant figure .image {
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  border-radius: 15px 15px 0px 0px;
+  overflow: hidden;
+}
+.restaurants .choix_restaurant figure .image img {
+  width: 100%;
+  height: auto;
+}
+.restaurants .choix_restaurant figure figcaption {
+  background-color: #fff;
+  height: 60px;
+  border-radius: 0px 0px 15px 15px;
+  padding-left: 10px;
+  padding-top: 15px;
+}
+.restaurants .choix_restaurant figure figcaption p {
+  border-radius: inherit;
+  font-size: 17px;
+  margin: 0;
+}
+.restaurants .choix_restaurant figure figcaption .lieu {
+  font-family: "robotolight";
+}
+.restaurants .choix_restaurant figure figcaption .like {
+  position: relative;
+  text-align: right;
+  bottom: 40px;
+  right: 25px;
+}
+.restaurants .choix_restaurant figure figcaption .like i {
+  font-size: 25px;
+}
+
+footer {
+  background-color: #262626;
+}
+footer p {
+  margin: 0;
+}
+footer p img {
+  width: 180px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
