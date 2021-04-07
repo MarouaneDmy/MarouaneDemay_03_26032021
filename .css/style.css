@@ -46,10 +46,10 @@ p {
 /* Header */
 header {
   display: flex;
+  position: relative;
   width: 100%;
   justify-content: center;
   margin: 0;
-  border-bottom: 3px solid #cccccc;
 }
 header p {
   margin: 0;
@@ -60,16 +60,43 @@ header p img {
   width: 180px;
   height: auto;
 }
+header i {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  font-size: 20px;
+  color: black;
+}
 
 footer {
   background-color: #262626;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+footer .image {
+  margin: 0;
+  margin-bottom: 20px;
+}
+footer .image img {
+  width: 120px;
+  height: auto;
+}
+footer .proposition {
+  color: #fff;
+  font-family: "robotomedium";
+}
+footer .proposition i {
+  margin-right: 10px;
+  color: #fff;
+  width: 15px;
+  font-size: 12px;
 }
 footer p {
   margin: 0;
-}
-footer p img {
-  width: 180px;
-  height: auto;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "robotolight";
 }
 
 /* Localisation du client */
@@ -79,6 +106,7 @@ footer p img {
   align-items: center;
   height: 50px;
   background-color: #e5e5e5;
+  border-top: 3px solid #cccccc;
 }
 .localisation .localisation_ville {
   display: flex;
@@ -100,7 +128,7 @@ footer p img {
   justify-content: center;
   background-color: #F2F2F2;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 .presentation h1 {
   width: 80%;
@@ -138,7 +166,7 @@ footer p img {
 .fonctionnement {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 .fonctionnement h1 {
   margin-top: 35px;
@@ -278,7 +306,7 @@ footer p img {
   flex-wrap: wrap;
   background-color: #F2F2F2;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .restaurants h1 {
   margin-left: 15px;
@@ -289,13 +317,34 @@ footer p img {
   justify-content: center;
   width: 100%;
 }
+.restaurants .choix_restaurant a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
 .restaurants .choix_restaurant figure {
+  position: relative;
   margin-right: 0px;
   margin-left: 0px;
   margin-top: 0px;
   width: 90%;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 5px 5px 5px #e5e5e5;
+  overflow: hidden;
+}
+.restaurants .choix_restaurant figure .nouveau {
+  position: absolute;
+  width: 65px;
+  right: 10px;
+  top: 15px;
+  margin: 0;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #2c9c81;
+  background-color: #99E2D0;
+  border-radius: 3px 3px 3px 3px;
 }
 .restaurants .choix_restaurant figure .image {
   width: 100%;
@@ -317,6 +366,7 @@ footer p img {
 }
 .restaurants .choix_restaurant figure figcaption p {
   border-radius: inherit;
+  color: black;
   font-size: 17px;
   margin: 0;
 }
@@ -331,6 +381,45 @@ footer p img {
 }
 .restaurants .choix_restaurant figure figcaption .like i {
   font-size: 25px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.menu_restaurant {
+  position: relative;
+  bottom: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+  border-radius: 30px 30px 0px 0px;
+}
+.menu_restaurant h1 {
+  font-family: "shrikhandregular";
+  font-size: 25px;
+  margin-top: 10px;
+}
+.menu_restaurant .like {
+  position: absolute;
+  right: 50px;
+  top: 13px;
+}
+.menu_restaurant .like i {
+  font-size: 25px;
+}
+
+.entree h2 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #737373;
+}
+.entree .barre {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
