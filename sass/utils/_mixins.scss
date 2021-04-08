@@ -107,6 +107,51 @@
     }
 }
 
+@mixin bouton {
+    width: 220px;
+    height: 50px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: 5px 5px 5px darken($color-grey, 15%);
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);  
+    a {
+        text-decoration: none;
+        p {
+            color: $color-white;
+            font-size: 16px;
+            margin: 0;
+            text-decoration: none;
+        }  
+    }
+}
+
+@mixin consommable {
+    position: relative;
+    width: 300px;
+    height: 40px;
+    background-color: $color-white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px darken($color-grey, 15%);
+    padding: 10px;
+    margin-bottom: 15px;
+    .titre {
+        margin: 0;
+    }
+    .sous_titre {
+        font-family: 'robotolight';
+        font-size: 13px;
+        color: darken($color-grey, 70%);
+        margin: 0;
+    }
+    .prix {
+        margin: 0;
+        position: absolute;
+        font-size: 15px;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+
 @mixin menu {
     h2 {
         margin-bottom: 5px;
@@ -119,5 +164,13 @@
         background-color: $color-tertiary;
         margin-bottom: 10px;
     }
-    
+    .menu_1 {
+        @include consommable;
+    }   
+    .menu_2 {
+        @include consommable;
+    }   
+    .menu_3 {
+        @include consommable;
+    }   
 }

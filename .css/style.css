@@ -98,6 +98,9 @@ footer p {
   color: #fff;
   font-family: "robotolight";
 }
+footer .contact {
+  margin-bottom: 20px;
+}
 
 /* Localisation du client */
 .localisation {
@@ -389,37 +392,143 @@ img {
 }
 
 .menu_restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
-  bottom: 50px;
   padding-top: 20px;
-  padding-left: 20px;
   background-color: #F2F2F2;
   border-radius: 30px 30px 0px 0px;
 }
 .menu_restaurant h1 {
   font-family: "shrikhandregular";
-  font-size: 25px;
+  width: 100%;
+  justify-content: left;
+  padding-left: 30px;
+  font-size: 24px;
   margin-top: 10px;
 }
 .menu_restaurant .like {
   position: absolute;
-  right: 50px;
+  right: 47px;
   top: 13px;
 }
 .menu_restaurant .like i {
   font-size: 25px;
 }
 
-.entree h2 {
+.menus {
+  position: relative;
+  margin-bottom: 15px;
+}
+.menus h2 {
   margin-bottom: 5px;
   font-size: 16px;
   color: #737373;
 }
-.entree .barre {
+.menus .barre {
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
   margin-bottom: 10px;
+}
+.menus .menu_1 {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 5px 5px #cccccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.menus .menu_1 .titre {
+  margin: 0;
+}
+.menus .menu_1 .sous_titre {
+  font-family: "robotolight";
+  font-size: 13px;
+  color: #404040;
+  margin: 0;
+}
+.menus .menu_1 .prix {
+  margin: 0;
+  position: absolute;
+  font-size: 15px;
+  right: 20px;
+  bottom: 10px;
+}
+.menus .menu_2 {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 5px 5px #cccccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.menus .menu_2 .titre {
+  margin: 0;
+}
+.menus .menu_2 .sous_titre {
+  font-family: "robotolight";
+  font-size: 13px;
+  color: #404040;
+  margin: 0;
+}
+.menus .menu_2 .prix {
+  margin: 0;
+  position: absolute;
+  font-size: 15px;
+  right: 20px;
+  bottom: 10px;
+}
+.menus .menu_3 {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 5px 5px #cccccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.menus .menu_3 .titre {
+  margin: 0;
+}
+.menus .menu_3 .sous_titre {
+  font-family: "robotolight";
+  font-size: 13px;
+  color: #404040;
+  margin: 0;
+}
+.menus .menu_3 .prix {
+  margin: 0;
+  position: absolute;
+  font-size: 15px;
+  right: 20px;
+  bottom: 10px;
+}
+
+.btn_commander {
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 5px #cccccc;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.btn_commander a {
+  text-decoration: none;
+}
+.btn_commander a p {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
