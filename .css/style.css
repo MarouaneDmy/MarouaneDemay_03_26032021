@@ -72,7 +72,7 @@ footer {
   background-color: #262626;
   padding-top: 30px;
   padding-left: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 footer .image {
   margin: 0;
@@ -95,11 +95,11 @@ footer .proposition i {
 footer p {
   margin: 0;
   margin-bottom: 5px;
-  color: #fff;
   font-family: "robotolight";
 }
-footer .contact {
-  margin-bottom: 20px;
+footer p a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Localisation du client */
@@ -397,6 +397,7 @@ img {
   justify-content: center;
   position: relative;
   padding-top: 20px;
+  margin-top: -50px;
   background-color: #F2F2F2;
   border-radius: 30px 30px 0px 0px;
 }
@@ -404,7 +405,7 @@ img {
   font-family: "shrikhandregular";
   width: 100%;
   justify-content: left;
-  padding-left: 30px;
+  padding-left: 20px;
   font-size: 24px;
   margin-top: 10px;
 }
@@ -432,78 +433,25 @@ img {
   background-color: #99E2D0;
   margin-bottom: 10px;
 }
-.menus .menu_1 {
+.menus .menu {
   position: relative;
   width: 300px;
-  height: 40px;
   background-color: #fff;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 5px 5px 5px #cccccc;
   padding: 10px;
   margin-bottom: 15px;
 }
-.menus .menu_1 .titre {
+.menus .menu .titre {
   margin: 0;
 }
-.menus .menu_1 .sous_titre {
+.menus .menu .sous_titre {
   font-family: "robotolight";
   font-size: 13px;
   color: #404040;
   margin: 0;
 }
-.menus .menu_1 .prix {
-  margin: 0;
-  position: absolute;
-  font-size: 15px;
-  right: 20px;
-  bottom: 10px;
-}
-.menus .menu_2 {
-  position: relative;
-  width: 300px;
-  height: 40px;
-  background-color: #fff;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 5px 5px 5px #cccccc;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-.menus .menu_2 .titre {
-  margin: 0;
-}
-.menus .menu_2 .sous_titre {
-  font-family: "robotolight";
-  font-size: 13px;
-  color: #404040;
-  margin: 0;
-}
-.menus .menu_2 .prix {
-  margin: 0;
-  position: absolute;
-  font-size: 15px;
-  right: 20px;
-  bottom: 10px;
-}
-.menus .menu_3 {
-  position: relative;
-  width: 300px;
-  height: 40px;
-  background-color: #fff;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 5px 5px 5px #cccccc;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-.menus .menu_3 .titre {
-  margin: 0;
-}
-.menus .menu_3 .sous_titre {
-  font-family: "robotolight";
-  font-size: 13px;
-  color: #404040;
-  margin: 0;
-}
-.menus .menu_3 .prix {
+.menus .menu .prix {
   margin: 0;
   position: absolute;
   font-size: 15px;

@@ -128,7 +128,6 @@
 @mixin consommable {
     position: relative;
     width: 300px;
-    height: 40px;
     background-color: $color-white;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 5px 5px 5px darken($color-grey, 15%);
@@ -164,13 +163,7 @@
         background-color: $color-tertiary;
         margin-bottom: 10px;
     }
-    .menu_1 {
-        @include consommable;
-    }   
-    .menu_2 {
-        @include consommable;
-    }   
-    .menu_3 {
+    .menu {
         @include consommable;
     }   
 }
