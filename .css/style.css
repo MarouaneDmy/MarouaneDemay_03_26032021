@@ -1,5 +1,12 @@
 @charset "UTF-8";
 /* ETAPES de FONCTIONNEMENT */
+@media only screen and (min-width: 800px) {
+  html {
+    margin-left: 17%;
+    margin-right: 17%;
+  }
+}
+
 /* Body */
 body {
   margin: 0;
@@ -191,6 +198,12 @@ footer p a {
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
 }
+@media only screen and (min-width: 600px) {
+  .fonctionnement .etapes .choisir {
+    width: 600px;
+    margin: 20px;
+  }
+}
 .fonctionnement .etapes .choisir .numero {
   display: flex;
   position: relative;
@@ -229,6 +242,12 @@ footer p a {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 600px) {
+  .fonctionnement .etapes .composer {
+    width: 600px;
+    margin: 20px;
+  }
 }
 .fonctionnement .etapes .composer .numero {
   display: flex;
@@ -269,6 +288,12 @@ footer p a {
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
   background-color: #efe6fa;
+}
+@media only screen and (min-width: 600px) {
+  .fonctionnement .etapes .deguster {
+    width: 600px;
+    margin: 20px;
+  }
 }
 .fonctionnement .etapes .deguster .numero {
   display: flex;
@@ -324,6 +349,7 @@ footer p a {
   display: flex;
   justify-content: center;
   text-decoration: none;
+  margin: 5px;
 }
 .restaurants .choix_restaurant figure {
   position: relative;
@@ -334,6 +360,11 @@ footer p a {
   border-radius: 15px 15px 15px 15px;
   box-shadow: 5px 5px 5px #e5e5e5;
   overflow: hidden;
+}
+@media only screen and (min-width: 600px) {
+  .restaurants .choix_restaurant figure {
+    width: 300px;
+  }
 }
 .restaurants .choix_restaurant figure .nouveau {
   position: absolute;
@@ -355,6 +386,11 @@ footer p a {
   margin: 0;
   border-radius: 15px 15px 0px 0px;
   overflow: hidden;
+}
+@media only screen and (min-width: 800px) {
+  .restaurants .choix_restaurant figure .image {
+    height: 180px;
+  }
 }
 .restaurants .choix_restaurant figure .image img {
   width: 100%;
@@ -400,6 +436,11 @@ img {
   margin-top: -50px;
   background-color: #F2F2F2;
   border-radius: 30px 30px 0px 0px;
+}
+@media only screen and (min-width: 1200px) {
+  .menu_restaurant {
+    margin-top: -200px;
+  }
 }
 .menu_restaurant h1 {
   font-family: "shrikhandregular";
@@ -447,6 +488,11 @@ img {
 }
 .menus .menu .sous_titre {
   font-family: "robotolight";
+  width: 230px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 13px;
   color: #404040;
   margin: 0;
@@ -457,6 +503,17 @@ img {
   font-size: 15px;
   right: 20px;
   bottom: 10px;
+}
+@media only screen and (min-width: 600px) {
+  .menus {
+    margin: 10px;
+  }
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .btn_commander {

@@ -12,6 +12,9 @@ img {
     margin-top: -50px;
     background-color: $color-grey;
     border-radius: 30px 30px 0px 0px;
+    @media only screen and (min-width: 1200px) {
+        margin-top: -200px;
+    }
     h1 {
         font-family: 'shrikhandregular';
         width: 100%;
@@ -34,6 +37,15 @@ img {
     position: relative;
     margin-bottom: 15px;
     @include menu;
+    @media only screen and (min-width: 600px) {
+        margin: 10px;
+    }
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .btn_commander {
