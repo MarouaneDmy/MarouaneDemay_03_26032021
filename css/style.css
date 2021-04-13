@@ -200,7 +200,7 @@ footer p a {
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .choisir {
-    width: 600px;
+    width: 350px;
     margin: 20px;
   }
 }
@@ -245,7 +245,7 @@ footer p a {
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .composer {
-    width: 600px;
+    width: 350px;
     margin: 20px;
   }
 }
@@ -291,7 +291,7 @@ footer p a {
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .deguster {
-    width: 600px;
+    width: 350px;
     margin: 20px;
   }
 }
