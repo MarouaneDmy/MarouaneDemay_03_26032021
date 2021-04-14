@@ -483,13 +483,14 @@ img {
   padding: 10px;
   margin-bottom: 15px;
   cursor: pointer;
+  overflow: hidden;
 }
 .menus .menu:hover > .ajouter {
-  transform: scaleX(1);
+  right: 0px;
 }
 .menus .menu:hover > .ajouter i {
   transform: rotate(1turn);
-  transition: transform 500ms;
+  transition: transform 550ms;
 }
 .menus .menu:hover > .prix {
   transform: translateX(-65px);
@@ -508,18 +509,16 @@ img {
   margin: 0;
   /*Positionnement du bloc ajouter*/
   position: absolute;
-  right: 0px;
+  right: -65px;
   top: 0px;
   bottom: 0px;
-  /* Taille, bordure et couleur */
+  /* Taille et couleur */
   width: 65px;
   height: 100%;
-  border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   /* Transition */
   transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 400ms linear;
+  transition: right 400ms ease-in-out;
 }
 .menus .menu .ajouter i {
   color: #fff;
@@ -530,7 +529,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: width 400ms linear;
+  transition: width 400ms ease-in-out;
 }
 .menus .menu .sous_titre {
   font-family: "robotolight";
@@ -542,7 +541,7 @@ img {
   font-size: 13px;
   color: #404040;
   margin: 0;
-  transition: width 400ms linear;
+  transition: width 400ms ease-in-out;
 }
 .menus .menu .prix {
   margin: 0;
@@ -550,7 +549,7 @@ img {
   font-size: 15px;
   right: 20px;
   bottom: 10px;
-  transition: transform 400ms linear;
+  transition: transform 400ms ease-in-out;
 }
 @media only screen and (min-width: 600px) {
   .menus {

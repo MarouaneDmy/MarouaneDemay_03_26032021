@@ -151,12 +151,13 @@
     padding: 10px;
     margin-bottom: 15px;
     cursor: pointer;
+    overflow: hidden;
     &:hover {
         & > .ajouter {
-            transform: scaleX(1);             
+            right: 0px;          
             i {
                 transform: rotate(1turn); 
-                transition: transform 500ms;             
+                transition: transform 550ms;             
             }
         }
         & > .prix {
@@ -177,18 +178,16 @@
         margin: 0;
         /*Positionnement du bloc ajouter*/
         position: absolute;
-        right: 0px;
+        right: -65px;
         top: 0px;
         bottom: 0px;
-        /* Taille, bordure et couleur */
+        /* Taille et couleur */
         width: 65px;
         height: 100%;
-        border-radius: 0px 15px 15px 0px;
         background-color: $color-tertiary;
         /* Transition */
         transform-origin: right;
-        transform: scaleX(0);
-        transition: transform 400ms linear;
+        transition: right 400ms ease-in-out;  
         i {
             color: $color-white;
             font-size: 25px;
@@ -197,7 +196,7 @@
     .titre {
         margin: 0;
         @include ellipsis;
-        transition: width 400ms linear;
+        transition: width 400ms ease-in-out;
     }
     .sous_titre {
         font-family: 'robotolight';
@@ -207,7 +206,7 @@
         font-size: 13px;
         color: darken($color-grey, 70%);
         margin: 0;
-        transition: width 400ms linear;
+        transition: width 400ms ease-in-out;
     }
     .prix {
         margin: 0;
@@ -215,7 +214,7 @@
         font-size: 15px;
         right: 20px;
         bottom: 10px;
-        transition: transform 400ms linear;
+        transition: transform 400ms ease-in-out;
     }
 }
 
