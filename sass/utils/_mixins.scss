@@ -150,8 +150,54 @@
     box-shadow: 5px 5px 5px darken($color-grey, 15%);
     padding: 10px;
     margin-bottom: 15px;
+    cursor: pointer;
+    &:hover {
+        & > .ajouter {
+            transform: scaleX(1);             
+            i {
+                transform: rotate(1turn); 
+                transition: transform 500ms;             
+            }
+        }
+        & > .prix {
+            transform: translateX(-65px);
+        }
+        & > .titre {
+            width: 170px;        
+        }
+        & > .sous_titre {
+            width: 170px;
+        }
+    }
+    .ajouter {
+        /* Alignement du au centre de l'image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        /*Positionnement du bloc ajouter*/
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        /* Taille, bordure et couleur */
+        width: 65px;
+        height: 100%;
+        border-radius: 0px 15px 15px 0px;
+        background-color: $color-tertiary;
+        /* Transition */
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 400ms linear;
+        i {
+            color: $color-white;
+            font-size: 25px;
+        }
+    }
     .titre {
         margin: 0;
+        @include ellipsis;
+        transition: width 400ms linear;
     }
     .sous_titre {
         font-family: 'robotolight';
@@ -161,6 +207,7 @@
         font-size: 13px;
         color: darken($color-grey, 70%);
         margin: 0;
+        transition: width 400ms linear;
     }
     .prix {
         margin: 0;
@@ -168,6 +215,7 @@
         font-size: 15px;
         right: 20px;
         bottom: 10px;
+        transition: transform 400ms linear;
     }
 }
 

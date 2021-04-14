@@ -482,9 +482,55 @@ img {
   box-shadow: 5px 5px 5px #cccccc;
   padding: 10px;
   margin-bottom: 15px;
+  cursor: pointer;
+}
+.menus .menu:hover > .ajouter {
+  transform: scaleX(1);
+}
+.menus .menu:hover > .ajouter i {
+  transform: rotate(1turn);
+  transition: transform 500ms;
+}
+.menus .menu:hover > .prix {
+  transform: translateX(-65px);
+}
+.menus .menu:hover > .titre {
+  width: 170px;
+}
+.menus .menu:hover > .sous_titre {
+  width: 170px;
+}
+.menus .menu .ajouter {
+  /* Alignement du au centre de l'image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /*Positionnement du bloc ajouter*/
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  /* Taille, bordure et couleur */
+  width: 65px;
+  height: 100%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  /* Transition */
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 400ms linear;
+}
+.menus .menu .ajouter i {
+  color: #fff;
+  font-size: 25px;
 }
 .menus .menu .titre {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: width 400ms linear;
 }
 .menus .menu .sous_titre {
   font-family: "robotolight";
@@ -496,6 +542,7 @@ img {
   font-size: 13px;
   color: #404040;
   margin: 0;
+  transition: width 400ms linear;
 }
 .menus .menu .prix {
   margin: 0;
@@ -503,6 +550,7 @@ img {
   font-size: 15px;
   right: 20px;
   bottom: 10px;
+  transition: transform 400ms linear;
 }
 @media only screen and (min-width: 600px) {
   .menus {
