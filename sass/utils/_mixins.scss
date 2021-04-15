@@ -1,3 +1,4 @@
+/* Coupe le texte d'un ... */
 @mixin ellipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -49,6 +50,7 @@
     }   
 }
 
+/* Choix des restaurants */
 @mixin restaurant {
     a {
         display: flex;
@@ -118,19 +120,28 @@
                 right: 25px;
                 i {
                     font-size: 25px;
+                    &:hover {
+                        background-image: url('../../images/logo/heart-solid.svg');
+                        color: $color-secondary;
+                    }
                 }
             }
         }
     }
 }
 
+/* Les différents boutons */
 @mixin bouton {
     width: 220px;
     height: 50px;
     border: none;
     border-radius: 30px 30px 30px 30px;
     box-shadow: 5px 5px 5px darken($color-grey, 15%);
-    background: linear-gradient(to bottom right, $color-secondary, $color-primary);  
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary); 
+    &:hover {
+        box-shadow: 5px 5px 5px darken($color-grey, 25%);
+        background: linear-gradient(to bottom right, lighten($color-secondary, 3%), lighten($color-primary, 3%));
+    } 
     a {
         text-decoration: none;
         p {
@@ -142,16 +153,28 @@
     }
 }
 
-@mixin consommable {
-    position: relative;
-    width: 300px;
-    background-color: $color-white;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 5px 5px 5px darken($color-grey, 15%);
-    padding: 10px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    overflow: hidden;
+/* Animation d'apparition progressive */
+@mixin apparition {
+    &__1 {
+        transition: 1s;
+        animation: opacity 1s;
+    }
+    &__2 {
+        transition: 1s;
+        animation: opacity 1.5s;
+    }
+    &__3 {
+        transition: 1s;
+        animation: opacity 2s;
+    }
+    &__4 {
+        transition: 1s;
+        animation: opacity 2.5s;
+    }
+}
+
+/* Animation sélection du menu */
+@mixin selection {
     &:hover {
         & > .ajouter {
             right: 0px;          
@@ -170,6 +193,20 @@
             width: 170px;
         }
     }
+}
+
+/* Différents menus */
+@mixin menu {
+    position: relative;
+    width: 300px;
+    background-color: $color-white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 5px 5px 5px darken($color-grey, 15%);
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    @include selection;
     .ajouter {
         /* Alignement du au centre de l'image */
         display: flex;
@@ -218,19 +255,3 @@
     }
 }
 
-@mixin menu {
-    h2 {
-        margin-bottom: 5px;
-        font-size: 16px;
-        color: darken($color-grey, 50%);
-    }
-    .barre {
-        width: 40px;
-        height: 3px;
-        background-color: $color-tertiary;
-        margin-bottom: 10px;
-    }
-    .menu {
-        @include consommable;
-    }   
-}

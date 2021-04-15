@@ -1,8 +1,10 @@
+/* Image du restaurant */
 img {
     width: 100%;
     height: auto;
 }
 
+/* Bloc pour placement des menus avec son titre et bouton like */
 .menu_restaurant {
     display: flex;
     flex-wrap: wrap;
@@ -29,19 +31,39 @@ img {
         top: 13px;
         i {
             font-size: 25px;
+            &:hover {
+                background-image: url('../../images/logo/heart-solid.svg');
+                color: $color-secondary;
+            }
         }
     }
 }
 
+/* Les différents menus */
 .menus {
     position: relative;
     margin-bottom: 15px;
-    @include menu;
+    h2 {
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: darken($color-grey, 50%);
+    }
+    .barre {
+        width: 40px;
+        height: 3px;
+        background-color: $color-tertiary;
+        margin-bottom: 10px;
+    }
+    .menu {
+        @include menu;
+        @include apparition;
+    }  
     @media only screen and (min-width: 600px) {
         margin: 10px;
     }
 }
 
+/* Le bouton commande du restaurant */
 .bouton {
     display: flex;
     justify-content: center;

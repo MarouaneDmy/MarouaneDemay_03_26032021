@@ -1,3 +1,26 @@
+/* Animation de chargement de la page */
+.loading {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: $color-grey;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 2;
+    animation: loading 1.5s both;
+    &__spinner {
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        border: 3px solid $color-primary;
+        border-radius: 50%;
+        border-top-color: $color-white;
+        margin-top: 200px;
+        animation: 1.5s spin infinite ease-in-out; 
+    }    
+}
+
 /* Localisation du client */
 .localisation {
     display: flex;

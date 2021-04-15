@@ -1,5 +1,46 @@
 @charset "UTF-8";
+/* Couleur */
+/* ------------------- Animations de chargement de la page et des menus ----------------*/
+@keyframes opacity {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes loading {
+  0% {
+    display: none;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    width: 100%;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Coupe le texte d'un ... */
 /* ETAPES de FONCTIONNEMENT */
+/* Choix des restaurants */
+/* Les différents boutons */
+/* Animation d'apparition progressive */
+/* Animation sélection du menu */
+/* Différents menus */
 @media only screen and (min-width: 800px) {
   html {
     margin-left: 17%;
@@ -7,13 +48,13 @@
   }
 }
 
-/* Body */
 body {
+  position: relative;
   margin: 0;
   justify-content: center;
 }
 
-/* Polices */
+/* Les différentes polices */
 @font-face {
   font-family: "shrikhandregular";
   src: url("../polices/shrikhand-regular-webfont.woff2") format("woff2"), url("../polices/shrikhand-regular-webfont.woff") format("woff");
@@ -50,7 +91,7 @@ p {
   font-family: "robotomedium", sans-serif;
 }
 
-/* Header */
+/* Header de la page */
 header {
   display: flex;
   position: relative;
@@ -75,6 +116,7 @@ header i {
   color: black;
 }
 
+/* Footer de la page */
 footer {
   background-color: #262626;
   padding-top: 30px;
@@ -107,6 +149,29 @@ footer p {
 footer p a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Animation de chargement de la page */
+.loading {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: 2;
+  animation: loading 1.5s both;
+}
+.loading__spinner {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  border: 3px solid #9356DC;
+  border-radius: 50%;
+  border-top-color: #fff;
+  margin-top: 200px;
+  animation: 1.5s spin infinite ease-in-out;
 }
 
 /* Localisation du client */
@@ -161,6 +226,10 @@ footer p a {
   border-radius: 30px 30px 30px 30px;
   box-shadow: 5px 5px 5px #cccccc;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+}
+.presentation .btn_explorer:hover {
+  box-shadow: 5px 5px 5px #b2b2b2;
+  background: linear-gradient(to bottom right, #ff88de, #9b63df);
 }
 .presentation .btn_explorer a {
   text-decoration: none;
@@ -421,12 +490,18 @@ footer p a {
 .restaurants .choix_restaurant figure figcaption .like i {
   font-size: 25px;
 }
+.restaurants .choix_restaurant figure figcaption .like i:hover {
+  background-image: url("../../images/logo/heart-solid.svg");
+  color: #FF79DA;
+}
 
+/* Image du restaurant */
 img {
   width: 100%;
   height: auto;
 }
 
+/* Bloc pour placement des menus avec son titre et bouton like */
 .menu_restaurant {
   display: flex;
   flex-wrap: wrap;
@@ -458,7 +533,12 @@ img {
 .menu_restaurant .like i {
   font-size: 25px;
 }
+.menu_restaurant .like i:hover {
+  background-image: url("../../images/logo/heart-solid.svg");
+  color: #FF79DA;
+}
 
+/* Les différents menus */
 .menus {
   position: relative;
   margin-bottom: 15px;
@@ -551,12 +631,29 @@ img {
   bottom: 10px;
   transition: transform 400ms ease-in-out;
 }
+.menus .menu__1 {
+  transition: 1s;
+  animation: opacity 1s;
+}
+.menus .menu__2 {
+  transition: 1s;
+  animation: opacity 1.5s;
+}
+.menus .menu__3 {
+  transition: 1s;
+  animation: opacity 2s;
+}
+.menus .menu__4 {
+  transition: 1s;
+  animation: opacity 2.5s;
+}
 @media only screen and (min-width: 600px) {
   .menus {
     margin: 10px;
   }
 }
 
+/* Le bouton commande du restaurant */
 .bouton {
   display: flex;
   justify-content: center;
@@ -572,6 +669,10 @@ img {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   margin-top: 20px;
   margin-bottom: 50px;
+}
+.btn_commander:hover {
+  box-shadow: 5px 5px 5px #b2b2b2;
+  background: linear-gradient(to bottom right, #ff88de, #9b63df);
 }
 .btn_commander a {
   text-decoration: none;
