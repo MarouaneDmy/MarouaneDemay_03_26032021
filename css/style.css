@@ -226,20 +226,15 @@ footer p a {
   border: none;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 5px 5px 5px #cccccc;
+  color: #fff;
+  font-size: 16px;
+  font-family: "robotomedium", sans-serif;
+  cursor: pointer;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 .presentation .btn_explorer:hover {
   box-shadow: 5px 5px 5px #b2b2b2;
   background: linear-gradient(to bottom right, #ff88de, #9b63df);
-}
-.presentation .btn_explorer a {
-  text-decoration: none;
-}
-.presentation .btn_explorer a p {
-  color: #fff;
-  font-size: 16px;
-  margin: 0;
-  text-decoration: none;
 }
 
 /* Etapes de fonctionnement du site */
@@ -270,7 +265,13 @@ footer p a {
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .choisir {
-    width: 350px;
+    width: 525px;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .fonctionnement .etapes .choisir {
+    width: 28%;
     margin: 20px;
   }
 }
@@ -303,6 +304,12 @@ footer p a {
   color: grey;
   font-size: 20px;
 }
+.fonctionnement .etapes .choisir:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .choisir:hover .icon i {
+  color: #9356DC;
+}
 .fonctionnement .etapes .composer {
   display: flex;
   align-items: center;
@@ -315,7 +322,13 @@ footer p a {
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .composer {
-    width: 350px;
+    width: 525px;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .fonctionnement .etapes .composer {
+    width: 28%;
     margin: 20px;
   }
 }
@@ -348,6 +361,12 @@ footer p a {
   color: grey;
   font-size: 20px;
 }
+.fonctionnement .etapes .composer:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .composer:hover .icon i {
+  color: #9356DC;
+}
 .fonctionnement .etapes .deguster {
   display: flex;
   align-items: center;
@@ -357,11 +376,16 @@ footer p a {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
-  background-color: #efe6fa;
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .deguster {
-    width: 350px;
+    width: 525px;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .fonctionnement .etapes .deguster {
+    width: 28%;
     margin: 20px;
   }
 }
@@ -394,7 +418,10 @@ footer p a {
   color: grey;
   font-size: 20px;
 }
-.fonctionnement .etapes .deguster .icon i {
+.fonctionnement .etapes .deguster:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .deguster:hover .icon i {
   color: #9356DC;
 }
 
@@ -492,7 +519,7 @@ footer p a {
   font-size: 25px;
 }
 .restaurants .choix_restaurant figure figcaption .like i:hover {
-  background-image: url("../../images/logo/heart-solid.svg");
+  background-image: url("../images/logo/heart-solid.svg");
   color: #FF79DA;
 }
 
@@ -535,7 +562,7 @@ img {
   font-size: 25px;
 }
 .menu_restaurant .like i:hover {
-  background-image: url("../../images/logo/heart-solid.svg");
+  background-image: url("../images/logo/heart-solid.svg");
   color: #FF79DA;
 }
 
@@ -667,6 +694,10 @@ img {
   border: none;
   border-radius: 30px 30px 30px 30px;
   box-shadow: 5px 5px 5px #cccccc;
+  color: #fff;
+  font-size: 16px;
+  font-family: "robotomedium", sans-serif;
+  cursor: pointer;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   margin-top: 20px;
   margin-bottom: 50px;
@@ -674,15 +705,6 @@ img {
 .btn_commander:hover {
   box-shadow: 5px 5px 5px #b2b2b2;
   background: linear-gradient(to bottom right, #ff88de, #9b63df);
-}
-.btn_commander a {
-  text-decoration: none;
-}
-.btn_commander a p {
-  color: #fff;
-  font-size: 16px;
-  margin: 0;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
