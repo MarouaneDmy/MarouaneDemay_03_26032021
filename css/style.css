@@ -169,6 +169,11 @@ footer p a {
   border-top-color: #fff;
   animation: spin 1.5s ease-in-out;
 }
+@media only screen and (min-width: 1200px) {
+  .loading__spinner {
+    top: 360px;
+  }
+}
 
 /* Localisation du client */
 .localisation {
