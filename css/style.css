@@ -263,6 +263,12 @@ footer p a {
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
 }
+.fonctionnement .etapes .choisir:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .choisir:hover .icon i {
+  color: #9356DC;
+}
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .choisir {
     width: 525px;
@@ -304,12 +310,6 @@ footer p a {
   color: grey;
   font-size: 20px;
 }
-.fonctionnement .etapes .choisir:hover {
-  background-color: #efe6fa;
-}
-.fonctionnement .etapes .choisir:hover .icon i {
-  color: #9356DC;
-}
 .fonctionnement .etapes .composer {
   display: flex;
   align-items: center;
@@ -319,6 +319,12 @@ footer p a {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
+}
+.fonctionnement .etapes .composer:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .composer:hover .icon i {
+  color: #9356DC;
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .composer {
@@ -361,12 +367,6 @@ footer p a {
   color: grey;
   font-size: 20px;
 }
-.fonctionnement .etapes .composer:hover {
-  background-color: #efe6fa;
-}
-.fonctionnement .etapes .composer:hover .icon i {
-  color: #9356DC;
-}
 .fonctionnement .etapes .deguster {
   display: flex;
   align-items: center;
@@ -376,6 +376,12 @@ footer p a {
   border-radius: 20px 20px 20px 20px;
   box-shadow: 5px 5px 5px #e5e5e5;
   margin-bottom: 20px;
+}
+.fonctionnement .etapes .deguster:hover {
+  background-color: #efe6fa;
+}
+.fonctionnement .etapes .deguster:hover .icon i {
+  color: #9356DC;
 }
 @media only screen and (min-width: 600px) {
   .fonctionnement .etapes .deguster {
@@ -417,12 +423,6 @@ footer p a {
 .fonctionnement .etapes .deguster .icon i {
   color: grey;
   font-size: 20px;
-}
-.fonctionnement .etapes .deguster:hover {
-  background-color: #efe6fa;
-}
-.fonctionnement .etapes .deguster:hover .icon i {
-  color: #9356DC;
 }
 
 /* Les différents restaurants */

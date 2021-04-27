@@ -90,30 +90,12 @@
         width: 100%;
         .choisir {
             @include etape;
-            &:hover {
-                background-color: lighten($color-primary, 34%);
-                .icon i {
-                color: $color-primary;
-                }
-            }
         }
         .composer {
             @include etape;
-            &:hover {
-                background-color: lighten($color-primary, 34%);
-                .icon i {
-                color: $color-primary;
-                }
-            }
         }
         .deguster {
             @include etape;
-            &:hover {
-                background-color: lighten($color-primary, 34%);
-                .icon i {
-                color: $color-primary;
-                }
-            }       
         }
     }
 }
